@@ -8,13 +8,14 @@ import { ListButton } from './pages/home/components/listButton'
 import { Hero } from './pages/home/components/hero'
 import { Container } from './pages/home/components/container'
 
+import imgFace from '/src/assets/foto_person.jpeg'
 export const App = () => {
   const person = {
     name: 'Jose Caicedo',
     username: '@jcaicedo',
     description:
       'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',
-    imageSrc: './src/assets/foto_person.jpeg',
+    imageSrc: imgFace,
     imageAlt: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
     logo: 'https://moure.dev/wp-content/uploads/2021/08/mouredev_logo.png',
     logoAlt: 'logo de la brand',

@@ -1,4 +1,4 @@
-import ImgLogo from './src/assets/logoCaicedo.svg'
+import ImgLogo from '/src/assets/logoCaicedo.svg'
 function Header() {
   return (
     <>
