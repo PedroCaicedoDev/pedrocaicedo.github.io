@@ -1,3 +1,4 @@
+import ImgLogo from './src/assets/logoCaicedo.svg'
 function Header() {
   return (
     <>
@@ -6,11 +7,7 @@ function Header() {
       bg-gray-600/90"
       >
         <div className="flex flex-shrink-0 items-center border-slate-900/10">
-          <img
-            alt="Your Company"
-            className="block h-8 sm:h-9 md:h-10 w-auto"
-            src="./src/assets/JC.png"
-          />
+          <img alt="Your Company" className="block h-5 sm:h-6 md:h-7 w-auto" src={ImgLogo} />
         </div>
       </header>
     </>

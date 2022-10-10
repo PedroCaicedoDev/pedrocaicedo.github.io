@@ -11,7 +11,7 @@ import { Container } from './pages/home/components/container'
 export const App = () => {
   const person = {
     name: 'Jose Caicedo',
-    username: '@jcaicedo1',
+    username: '@jcaicedo',
     description:
       'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',
     imageSrc: './src/assets/foto_person.jpeg',
