@@ -9,7 +9,7 @@ function Header() {
           <img
             alt="Your Company"
             className="block h-8 sm:h-9 md:h-10 w-auto"
-            src="/src/assets/JC.png"
+            src="./src/assets/JC.png"
           />
         </div>
       </header>

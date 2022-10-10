@@ -14,7 +14,7 @@ export const App = () => {
     username: '@jcaicedo1',
     description:
       'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',
-    imageSrc: '/src/assets/foto_person.jpeg',
+    imageSrc: './src/assets/foto_person.jpeg',
     imageAlt: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
     logo: 'https://moure.dev/wp-content/uploads/2021/08/mouredev_logo.png',
     logoAlt: 'logo de la brand',
@@ -33,19 +33,19 @@ export const App = () => {
         iconImg: <BiWorld className="mr-2 w-5 h-5" />,
         titleName: 'Mi sitio web',
         href: '#',
-        type: 'primary',
+        type: 'btn-primary',
       },
       {
         iconImg: <BsReverseLayoutTextSidebarReverse className="mr-2 w-5 h-5" />,
         titleName: 'Curriculum',
         href: '#',
-        type: 'secondary',
+        type: 'btn-secondary',
       },
       {
         iconImg: <BsGithub className="mr-2 w-5 h-5" />,
         titleName: 'GitHub',
         href: 'https://vitejs.dev/guide/static-deploy.html',
-        type: 'tertary',
+        type: 'btn-third',
       },
     ],
   }

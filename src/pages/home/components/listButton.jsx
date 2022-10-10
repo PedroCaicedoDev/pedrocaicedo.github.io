@@ -4,18 +4,22 @@ export function ListButton(props) {
   return (
     <>
       <div className="flex flex-col gap-5">
-        {buttonLink.map((link) => (
-          <a
-            key={link.titleName}
-            className={`btn btn-${link.type}`}
-            href={link.href}
-            rel="noreferrer"
-            target="_blank"
-          >
-            {link.iconImg}
-            {link.titleName}
-          </a>
-        ))}
+        {buttonLink.map((link) => {
+          const btnColor = `btn ${link.type}`
+
+          return (
+            <a
+              key={link.titleName}
+              className={`${btnColor}`}
+              href={link.href}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {link.iconImg}
+              {link.titleName}
+            </a>
+          )
+        })}
       </div>
     </>
   )
