@@ -3,7 +3,7 @@ export function ListButton(props) {
 
   return (
     <>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-4">
         {buttonLink.map((link) => {
           const btnColor = `btn ${link.type}`
 

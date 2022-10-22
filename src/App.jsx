@@ -1,64 +1,47 @@
 import './App.css'
-import { BsGithub, BsReverseLayoutTextSidebarReverse } from 'react-icons/bs'
-import { BiWorld } from 'react-icons/bi'
+import { useTranslation } from 'react-i18next'
+
+import { Contact } from './pages/home/components/contact/contact'
+
+//translation
 
 import Header from './components/header'
 import ImageHome from './pages/home/components/image'
 import { ListButton } from './pages/home/components/listButton'
 import { Hero } from './pages/home/components/hero'
 import { Container } from './pages/home/components/container'
+import { person } from './pages/home/components/dataPerson'
+import { ListNetworkSocial } from './pages/home/components/networkSocial/listNetworkSocial'
+import { Footer } from './components/footer'
 
-import imgFace from '/src/assets/foto_person.jpeg'
 export const App = () => {
-  const person = {
-    name: 'Jose Caicedo',
-    username: '@jcaicedo',
-    description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',
-    imageSrc: imgFace,
-    imageAlt: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-    logo: 'https://moure.dev/wp-content/uploads/2021/08/mouredev_logo.png',
-    logoAlt: 'logo de la brand',
-    networkSocial: [
-      {
-        title: 'instagram',
-        href: 'https://twitter.com/mouredev',
-      },
-      {
-        title: 'twitter',
-        href: 'https://twitter.com/mouredev',
-      },
-    ],
-    link: [
-      {
-        iconImg: <BiWorld className="mr-2 w-5 h-5" />,
-        titleName: 'Mi sitio web',
-        href: '#',
-        type: 'btn-primary',
-      },
-      {
-        iconImg: <BsReverseLayoutTextSidebarReverse className="mr-2 w-5 h-5" />,
-        titleName: 'Curriculum',
-        href: '#',
-        type: 'btn-secondary',
-      },
-      {
-        iconImg: <BsGithub className="mr-2 w-5 h-5" />,
-        titleName: 'GitHub',
-        href: 'https://vitejs.dev/guide/static-deploy.html',
-        type: 'btn-third',
-      },
-    ],
+  const { t, i18n } = useTranslation()
+  const handleLanguageLng = (lng) => {
+    i18n.changeLanguage(lng)
+
+    localStorage.setItem('lng', lng)
   }
 
   return (
     <>
-      <Header />
+      <Header handle={handleLanguageLng} />
       <Container>
         <ImageHome alt={person.imageAlt} imageSrc={person.imageSrc} />
-        <Hero description={person.description} name={person.name} username={person.username} />
+        <Hero
+          description={`${t('description')}`}
+          name={person.name}
+          present={`${t('present')}`}
+          username={person.username}
+        />
+
         <ListButton person={person.link} />
+
+        {/* Section Network Social */}
+        <ListNetworkSocial />
+
+        <Contact />
       </Container>
+      <Footer />
     </>
   )
 }
