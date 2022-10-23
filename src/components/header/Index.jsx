@@ -34,10 +34,10 @@ function Header(props) {
   return (
     <>
       <header
-        className="flex justify-between p-4 sticky top-0 w-full backdrop-blur
-      bg-gray-700/20 dark:bg-slate-700/20"
+        className="flex justify-between p-4 sticky top-0 w-full
+        bg-gray-700/20 dark:bg-black/70"
       >
-        <div className="flex flex-shrink-0 items-center border-slate-900/10">
+        <div className="flex flex-shrink-0 items-center">
           {!isDark ? (
             <img alt="Your Company" className="block h-5 sm:h-6 md:h-7 w-auto" src={ImgLogoBlack} />
           ) : (
@@ -45,7 +45,7 @@ function Header(props) {
           )}
         </div>
 
-        <div className="flex dark:text-white gap-1 items-center text-sm text-[#1E1E1E]">
+        <div className="flex dark:text-white gap-1 items-center text-sm text-black">
           <SwitchLanguage handle={props.handle} />
           <p className="mx-1 text-base">|</p>
           <button

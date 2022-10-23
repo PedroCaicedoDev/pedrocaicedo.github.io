@@ -21,11 +21,11 @@ export function SwitchLanguage(props) {
         />
         <div
           className="w-9 h-4 z-2 bg-slate-400 peer-focus:outline-none peer-focus:ring-2
-      peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer
+      peer-focus:ring-zinc-300 dark:peer-focus:ring-zinc-700 rounded-full peer
       dark:bg-gray-400 peer-checked:after:translate-x-full
-      peer-checked:after:border-white after:content-['']
+      peer-checked:after:order-slate-500 after:content-['']
       after:absolute after:top-0 after:left-[2px] after:bg-[#1E1E1E]
-    after:border-slate-600 after:border after:rounded-full after:h-4
+    after:border-slate-500 after:border after:rounded-full after:h-4
       after:w-4 after:z-5 after:transition-all dark:border-gray-600 peer-checked:bg-slate-400"
         />
       </label>

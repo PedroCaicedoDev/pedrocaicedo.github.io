@@ -1,5 +1,5 @@
 import { SiYoutube } from 'react-icons/si'
-import { BsInstagram, BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsInstagram, BsTwitter, BsLinkedin, BsStackOverflow } from 'react-icons/bs'
 
 export const social = [
   {
@@ -23,8 +23,8 @@ export const social = [
     href: 'https://www.youtube.com/pedro-caicedo',
   },
   {
-    iconImg: <BsGithub className="text-3xl" />,
-    titleName: 'Github',
-    href: 'https://github.com/PedroCaicedoDev',
+    iconImg: <BsStackOverflow className="text-3xl" />,
+    titleName: 'StackOverflow',
+    href: 'https://stackoverflow.com/users/5948357/pedro-caicedo-dev',
   },
 ]

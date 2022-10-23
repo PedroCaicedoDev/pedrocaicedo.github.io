@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-screen {
-  background-image: url("./assets/trama.svg");
+/* .bg-screen {
+  background-image: url("./assets/trama3.svg");
+  background-size: 25%;
   background-repeat: repeat;
-}
+} */
 
 @layer components{
   .btn{
@@ -13,42 +14,27 @@
      text-center flex justify-center items-center
   }
   .btn:hover{
-    @apply bg-[#8E8E8D]/80
+    @apply bg-[#8E8E8D]/80 text-white
   }
   .btn-primary{
     @apply bg-[#1e73be]
   }
   .btn-secondary{
-    @apply bg-[#1E1E1E]/90
+    @apply bg-black/90
   }
-  .btn-third{
-    @apply bg-[#f2740d]/90
+  .btn-green {
+    @apply bg-apple_green text-black text-xl
   }
-  .btn-green{
-    @apply bg-[#00e789] text-[#1E1E1E] text-xl
+  .btn-black-medium{
+    @apply bg-zinc-900 text-apple_green ring-1 text-xl ring-apple_green/20
   }
-  .btn-green80{
-    @apply bg-[#00e789]/80 text-[#1E1E1E] text-xl
-  }
-  .btn-green70{
-    @apply bg-[#00e789]/70 text-[#1E1E1E] text-xl
-  }
-  .btn-blue{
-    @apply bg-[#00e7ef] text-[#1E1E1E] text-xl
+  .btn-black{
+    @apply bg-zinc-900 text-zinc-200 ring-1 text-xl ring-zinc-600
   }
   .btn-blue90{
-    @apply bg-[#00e7ef]/90 text-[#1E1E1E] text-xl
+    @apply bg-turquoise_blue/90 text-black text-xl
   }
-  .btn-blue80{
-    @apply bg-[#00e7ef]/80 text-[#1E1E1E] text-xl
-  }
-  .btn-blue70{
-    @apply bg-[#00e7ef]/70 text-[#1E1E1E] text-xl
-  }
-  .btn-blue60{
-    @apply bg-[#00e7ef]/60 text-[#1E1E1E] text-xl
-  }
-  .btn-blue50{
-    @apply bg-[#00e7ef]/50 text-[#1E1E1E] text-xl
+  .btn-yellow{
+    @apply bg-[#fd0] text-black
   }
 }

@@ -8,13 +8,7 @@ export function ListButton(props) {
           const btnColor = `btn ${link.type}`
 
           return (
-            <a
-              key={link.titleName}
-              className={`${btnColor}`}
-              href={link.href}
-              rel="noreferrer"
-              target="_blank"
-            >
+            <a key={link.titleName} className={`${btnColor}`} href={link.href} target={link.target}>
               {link.iconImg}
               {link.titleName}
             </a>

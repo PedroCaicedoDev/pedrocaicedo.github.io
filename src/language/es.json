@@ -1,5 +1,4 @@
 {
-  "hi": "hola",
-  "present": "Soy ",
-  "description": "El siguiente paso es envolver nuestro componente principal en el componente Provider de react-redux, al que le vamos a pasar el store. En app.js."
+  "present": "Hola, un gusto conocerte soy ",
+  "description": "Aunque tengo varios apodos (Peter, Pedriño, Pedrinchi). Me gusta resolver problemas con tecnología, hace ya 12 años me dedico a resolverlos con software. También me gusta hacer deporte y viajar."
 }
