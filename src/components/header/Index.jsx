@@ -45,10 +45,11 @@ function Header(props) {
           )}
         </div>
 
-        <div className="flex dark:text-white gap-1 items-center text-sm text-slate-900">
+        <div className="flex dark:text-white gap-1 items-center text-sm text-[#1E1E1E]">
           <SwitchLanguage handle={props.handle} />
+          <p className="mx-1 text-base">|</p>
           <button
-            className="ml-3 text-2xl dark:text-white text-slate-900"
+            className="text-2xl dark:text-white text-[#1E1E1E]"
             href=""
             onClick={changeDarkMode}
           >

@@ -39,6 +39,7 @@ export const App = () => {
         {/* Section Network Social */}
         <ListNetworkSocial />
 
+        <ListButton person={person.others} />
         <Contact />
       </Container>
       <Footer />

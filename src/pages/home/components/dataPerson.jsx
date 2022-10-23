@@ -1,14 +1,18 @@
 import { BiWorld } from 'react-icons/bi'
-import { BsGithub, BsReverseLayoutTextSidebarReverse } from 'react-icons/bs'
-
-import imgFace from '/src/assets/foto_person.jpeg'
+import { BsStackOverflow, BsFillHandThumbsUpFill } from 'react-icons/bs'
+import { GrMedium } from 'react-icons/gr'
+import { AiOutlineCode } from 'react-icons/ai'
+import { GiSoccerKick } from 'react-icons/gi'
+import { FaPlane } from 'react-icons/fa'
+import { RiCoupon2Fill } from 'react-icons/ri'
+import { SiBuymeacoffee } from 'react-icons/si'
 
 export const person = {
-  name: 'Jose Caicedo',
-  username: '@jcaicedo',
+  name: 'Pedro Caicedo',
+  username: '@PedroCaicedo',
   description:
     'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',
-  imageSrc: imgFace,
+  imageSrc: 'https://secure.gravatar.com/avatar/8b801a2544619e18ec571facb3f03029?size=500',
   imageAlt: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
   logo: 'https://moure.dev/wp-content/uploads/2021/08/mouredev_logo.png',
   logoAlt: 'logo de la brand',
@@ -25,21 +29,59 @@ export const person = {
   link: [
     {
       iconImg: <BiWorld className="mr-2 w-5 h-5" />,
-      titleName: 'Mi sitio web',
+      titleName: 'Proyectos',
       href: '#',
-      type: 'btn-primary',
+      type: 'btn-green',
     },
     {
-      iconImg: <BsReverseLayoutTextSidebarReverse className="mr-2 w-5 h-5" />,
-      titleName: 'Curriculum',
-      href: 'https://jose.caicedo.dev/hv-html',
-      type: 'btn-secondary',
+      iconImg: <GrMedium className="mr-2 w-5 h-5" />,
+      titleName: 'Medium',
+      href: 'https://pedrocaicedo.medium.com',
+      type: 'btn-green80',
     },
     {
-      iconImg: <BsGithub className="mr-2 w-5 h-5" />,
-      titleName: 'GitHub',
-      href: 'https://github.com/JoseCaicedoDev',
-      type: 'btn-third',
+      iconImg: <BsStackOverflow className="mr-2 w-5 h-5" />,
+      titleName: 'StackOverflow',
+      href: 'https://stackoverflow.com/users/5948357/pedro-caicedo-dev',
+      type: 'btn-green70',
+    },
+  ],
+  others: [
+    {
+      iconImg: <AiOutlineCode className="mr-2 w-5 h-5" />,
+      titleName: 'Programación',
+      href: '/',
+      type: 'btn-blue',
+    },
+    {
+      iconImg: <GiSoccerKick className="mr-2 w-5 h-5" />,
+      titleName: 'Deporte',
+      href: '/',
+      type: 'btn-blue80',
+    },
+    {
+      iconImg: <FaPlane className="mr-2 w-5 h-5" />,
+      titleName: 'Viajes',
+      href: '/',
+      type: 'btn-blue70',
+    },
+    {
+      iconImg: <RiCoupon2Fill className="mr-2 w-5 h-5" />,
+      titleName: 'Cupones o Referidos',
+      href: '/',
+      type: 'btn-blue60',
+    },
+    {
+      iconImg: <BsFillHandThumbsUpFill className="mr-2 w-5 h-5" />,
+      titleName: 'Recomendaciones',
+      href: '/',
+      type: 'btn-blue50',
+    },
+    {
+      iconImg: <SiBuymeacoffee className="mr-2 w-5 h-5" />,
+      titleName: 'Invítame a un café',
+      href: '/',
+      type: 'btn-green',
     },
   ],
 }
