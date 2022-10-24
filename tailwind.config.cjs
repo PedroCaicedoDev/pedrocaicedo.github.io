@@ -8,8 +8,8 @@ module.exports = {
         montserrat: "'Montserrat', sans-serif;",
       },
       backgroundImage: {
-        'hero-dark': "url('./src/assets/trama-dark.svg')",
-        'hero-pattern': "url('./src/assets/trama.svg')",
+        'hero-dark': "url('/src/assets/trama-dark.svg')",
+        'hero-pattern': "url('/src/assets/trama.svg')",
       },
       colors: {
         turquoise_blue: '#00e7ef',
