@@ -6,6 +6,14 @@ import { GiSoccerKick } from 'react-icons/gi'
 import { FaPlane } from 'react-icons/fa'
 import { RiCoupon2Fill } from 'react-icons/ri'
 import { SiBuymeacoffee } from 'react-icons/si'
+/* import { useTranslation } from 'react-i18next'
+const { t, i18n } = useTranslation()
+
+const handleLanguageLng = (lng) => {
+  i18n.changeLanguage(lng)
+
+  localStorage.setItem('lng', lng)
+} */
 
 export const person = {
   name: 'Pedro',
@@ -14,7 +22,7 @@ export const person = {
     'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',
   imageSrc: 'https://secure.gravatar.com/avatar/8b801a2544619e18ec571facb3f03029?size=500',
   imageAlt: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-  logo: 'https://moure.dev/wp-content/uploads/2021/08/mouredev_logo.png',
+  logo: '',
   logoAlt: 'logo de la brand',
   link: [
     {
@@ -46,6 +54,7 @@ export const person = {
       href: 'https://pedrocaicedo.medium.com',
       type: 'btn-black-medium',
       target: '_blank',
+      tag: 'a',
     },
     {
       iconImg: <BsGithub className="mr-2 w-5 h-5" />,
@@ -53,6 +62,7 @@ export const person = {
       href: 'https://github.com/PedroCaicedoDev',
       type: 'btn-black',
       target: '_blank',
+      tag: 'a',
     },
     {
       iconImg: <RiCoupon2Fill className="mr-2 w-5 h-5" />,
@@ -74,6 +84,7 @@ export const person = {
       href: 'https://www.buymeacoffee.com/caicedo.dev',
       type: 'btn-yellow',
       target: '_blank',
+      tag: 'a',
     },
   ],
 }

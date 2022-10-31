@@ -1,4 +1,10 @@
 {
   "present": "Hola, un gusto conocerte soy ",
-  "description": "Aunque tengo varios apodos (Peter, Pedriño, Pedrinchi). Me gusta resolver problemas con tecnología, hace ya 12 años me dedico a resolverlos con software. También me gusta hacer deporte y viajar."
+  "description": "Aunque tengo varios apodos (Peter, Pedriño, Pedrinchi). Me gusta resolver problemas con tecnología, hace ya 12 años me dedico a resolverlos con software. También me gusta hacer deporte y viajar.",
+  "link_0":"Programación",
+  "link_1":"Deporte",
+  "link_2":"Viajes",
+  "link_3":"Recommend",
+  "link_4":"Viajes"
+
 }

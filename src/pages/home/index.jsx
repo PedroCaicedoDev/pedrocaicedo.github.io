@@ -31,12 +31,12 @@ export function Home() {
           username={person.username}
         />
 
-        <ListButton person={person.link} />
+        <ListButton person={person.link} t={t} />
 
         {/* Section Network Social */}
         <ListNetworkSocial />
 
-        <ListButton person={person.others} />
+        <ListButton person={person.others} t={t} tag={person.others} />
         <Contact />
       </Container>
       <Footer />

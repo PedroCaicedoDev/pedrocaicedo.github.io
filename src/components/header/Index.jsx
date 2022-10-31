@@ -8,6 +8,8 @@ import ImgLogoWhite from '../../assets/logoCaicedoW.svg'
 import './translate'
 import { SwitchLanguage } from './switchLanguage'
 
+import { Link } from 'react-router-dom'
+
 function Header(props) {
   const darkSwitch = useRef(document.documentElement.className === 'dark')
   const [isDark, setIsDark] = useState(false)
@@ -39,9 +41,21 @@ function Header(props) {
       >
         <div className="flex flex-shrink-0 items-center">
           {!isDark ? (
-            <img alt="Your Company" className="block h-5 sm:h-6 md:h-7 w-auto" src={ImgLogoBlack} />
+            <Link to={'/'}>
+              <img
+                alt="Your Company"
+                className="block h-5 sm:h-6 md:h-7 w-auto"
+                src={ImgLogoBlack}
+              />
+            </Link>
           ) : (
-            <img alt="Your Company" className="block h-5 sm:h-6 md:h-7 w-auto" src={ImgLogoWhite} />
+            <Link to={'/'}>
+              <img
+                alt="Your Company"
+                className="block h-5 sm:h-6 md:h-7 w-auto"
+                src={ImgLogoWhite}
+              />
+            </Link>
           )}
         </div>
 
@@ -49,6 +63,7 @@ function Header(props) {
           <SwitchLanguage handle={props.handle} />
           <p className="mx-1 text-base">|</p>
           <button
+            aria-label="dark mode button"
             className="text-2xl dark:text-white text-[#1E1E1E]"
             href=""
             onClick={changeDarkMode}

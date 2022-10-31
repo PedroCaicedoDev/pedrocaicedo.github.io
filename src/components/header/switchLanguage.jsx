@@ -13,6 +13,7 @@ export function SwitchLanguage(props) {
       <span className="mr-1">es</span>
       <label className="inline-flex relative items-center cursor-pointer" htmlFor="default-toggle">
         <input
+          aria-label="language change button"
           className="sr-only peer before:content-['en']"
           id="default-toggle"
           type="checkbox"

@@ -1,6 +1,11 @@
 {
-  "hi": "hello",
-  "present":"I am ",
+  "present":"Hello, nice to meet you I'm",
   "description":
-  "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+  "Although I have several nicknames (Peter, Pedriño, Pedrinchi). I like to solve problems with technology, I have been solving them with software for 12 years now. I also like to do sports and travel.",
+  "link_0": "Programming",
+  "link_1": "Sports",
+  "link_2": "Travel",
+  "href_0": "/programming",
+  "href_1": "/sports",
+  "href_2": "/travel"
 }

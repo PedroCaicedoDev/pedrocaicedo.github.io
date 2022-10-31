@@ -1,23 +1,18 @@
-import imgLogo from '../../assets/JC.png'
+import imgLogo from '../../assets/logoCaicedo1.svg'
 
 export function Footer() {
   return (
     <footer
       className="bg-gray-700/20 dark:bg-black/70 w-full px-6 h-14
-      flex flex-row justify-between items-center transition-all duration-700"
+      flex flex-col justify-center items-center transition-all duration-700"
     >
-      <p className="text-xs dark:text-slate-100 w-4/5">
-        © 2022
-        <a
-          className="text-slate-800 dark:text-sky-500
-          mx-2 font-semibold"
-          href="#"
-        >
-          JCaicedo
-        </a>
-        building Software with ♥ from Colombia to the world.
+      <p className="text-xs dark:text-slate-100">
+        Building Software with ♥ from LATAM to the world.
       </p>
-      <img alt="imagen logo" className="h-5" src={imgLogo} />
+      <a className="flex items-center font-base text-xs dark:text-slate-100" href="/">
+        by
+        <img alt="imagen logo" className="h-4 ml-1" src={imgLogo} />
+      </a>
     </footer>
   )
 }

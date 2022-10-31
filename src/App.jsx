@@ -1,14 +1,14 @@
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 import AppRoute from './routes'
 
 export const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <AppRoute />
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
