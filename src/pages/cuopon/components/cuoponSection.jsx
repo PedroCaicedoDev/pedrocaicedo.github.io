@@ -2,7 +2,7 @@ export function CuoponSection() {
   return (
     <>
       <article className="grid sm:grid-cols-2 gap-3">
-        <div className="flex items-center h-24 rounded-md bg-black/30">
+        {/*         <div className="flex items-center h-24 rounded-md bg-black/30">
           <img
             alt=""
             className="h-full"
@@ -29,7 +29,7 @@ export function CuoponSection() {
               <span className="ml-2 bg-apple_green p-1.5 rounded-lg">Copiar</span>
             </p>
           </div>
-        </div>
+        </div> */}
       </article>
     </>
   )

@@ -1,10 +1,12 @@
 {
-  "present": "Hola, un gusto conocerte soy ",
-  "description": "Aunque tengo varios apodos (Peter, Pedriño, Pedrinchi). Me gusta resolver problemas con tecnología, hace ya 12 años me dedico a resolverlos con software. También me gusta hacer deporte y viajar.",
+  "present": "Hola, bienvenido soy ",
+  "description": "Me gusta resolver problemas con tecnología, hace ya 12 años me dedico a resolverlos con software. También me gusta hacer deporte y viajar.",
   "link_0":"Programación",
   "link_1":"Deporte",
   "link_2":"Viajes",
   "link_3":"Recommend",
-  "link_4":"Viajes"
+  "link_4":"Viajes",
+  "footer_1": "Este sitio web es propiedad y administrado por Pedro Caicedo.",
+  "footer_2": "Construyendo Software con ♥ de LATAM para el mundo."
 
 }

@@ -16,7 +16,7 @@ const handleLanguageLng = (lng) => {
 } */
 
 export const person = {
-  name: 'Pedro',
+  name: 'Pedro Caicedo',
   username: '@pedro.caicedo.dev',
   description:
     'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',

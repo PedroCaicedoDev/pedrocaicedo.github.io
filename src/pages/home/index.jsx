@@ -1,8 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-import Header from '../../components/header'
 import { ListButton } from '../home/components/listButton'
-import { Footer } from '../../components/footer'
 
 import ImageHome from './components/image'
 import { Hero } from './components/hero'
@@ -21,7 +19,6 @@ export function Home() {
 
   return (
     <>
-      <Header handle={handleLanguageLng} />
       <Container>
         <ImageHome alt={person.imageAlt} imageSrc={person.imageSrc} />
         <Hero
@@ -39,7 +36,6 @@ export function Home() {
         <ListButton person={person.others} t={t} tag={person.others} />
         <Contact />
       </Container>
-      <Footer />
     </>
   )
 }
