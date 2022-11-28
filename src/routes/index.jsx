@@ -9,6 +9,7 @@ import { Recomendacion } from '../pages/recomendacion'
 import { CuoponReferred } from '../pages/cuopon'
 import Header from '../components/header'
 import { Footer } from '../components/footer'
+import { NotFound } from '../pages/not_found'
 
 function AppRoute() {
   const { t, i18n } = useTranslation()
@@ -28,6 +29,7 @@ function AppRoute() {
         <Route element={<Recomendacion />} path="/recomendacion" />
         <Route element={<CuoponReferred />} path="/cupon-referidos" />
         <Route exact element={<Home />} path="/" />
+        <Route exact element={<NotFound />} path="*" />
       </Routes>
       <Footer t={t} />
     </>

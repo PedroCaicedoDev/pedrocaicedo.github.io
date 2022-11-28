@@ -2,17 +2,11 @@ import Iframe from 'react-iframe'
 
 import { ContainerPages } from '../../components/container/container_pages'
 import { Breadcrumbs } from '../../components/breadCrumbs'
-import Header from '../../components/header'
-import imageCard from '../../assets/martinHewlett.jpeg'
 export function Recomendacion() {
   return (
     <>
-      <Header />
       <ContainerPages>
-        <div className="px-4 py-3 sm:flex justify-between dark:text-white bg-zinc-100/10">
-          <h2 className="text-2xl mb-2 sm:m-0 sm:text-3xl font-semibold">Recomendación</h2>
-          <Breadcrumbs />
-        </div>
+        <Breadcrumbs title={'Recomendación'} />4{' '}
         <div className="max-w-lg mx-auto mt-8 flex flex-wrap gap-4">
           <div className="bg-white/10 p-4 rounded-lg shadow hover:shadow-xl transition-all w-full ">
             <div className="mt-4 flex flex-col gap-2">

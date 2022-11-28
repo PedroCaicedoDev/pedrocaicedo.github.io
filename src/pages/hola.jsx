@@ -5,10 +5,7 @@ export function Hola(props) {
   return (
     <>
       <ContainerPages>
-        <div className="px-4 py-3 sm:flex justify-between dark:text-white bg-zinc-100/10">
-          <h2 className="text-2xl sm:text-3xl font-semibold">{props.title}</h2>
-          <Breadcrumbs />
-        </div>
+        <Breadcrumbs title={props.title} />
       </ContainerPages>
       <div className="flex flex-col items-center mt-10">
         <img alt="" className="w-2/5" src={Travel} />

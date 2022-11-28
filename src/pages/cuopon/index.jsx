@@ -15,11 +15,7 @@ export function CuoponReferred() {
   return (
     <>
       <ContainerPages>
-        <div className="px-4 py-3 sm:flex justify-between dark:text-white bg-zinc-100/10">
-          <h2 className="text-2xl mb-2 sm:m-0 sm:text-3xl font-semibold">Cupones y referidos</h2>
-          <Breadcrumbs />
-        </div>
-
+        <Breadcrumbs title={'Cupones y referidos'} />
         <section className="mt-10 w-full px-3 max-w-4xl mx-auto">
           <ul
             className="flex gap-2 text-md font-medium text-center
