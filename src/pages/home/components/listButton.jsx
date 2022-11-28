@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-export function ListButton({ person, t }) {
+export function ListButton({ person, t, sequence }) {
   const buttonLink = person
 
   return (
@@ -31,7 +31,7 @@ export function ListButton({ person, t }) {
               to={link.href}
             >
               {link.iconImg}
-              {t(`link_${index}`)}
+              {t(`link_${index}${sequence}`)}
             </Link>
           )
         })}
